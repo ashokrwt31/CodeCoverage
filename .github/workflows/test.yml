@@ -41,9 +41,8 @@ jobs:
           unzip -o $HOME/.sonar/build-wrapper-macosx-x86.zip -d $HOME/.sonar/
           echo "$HOME/.sonar/build-wrapper-macosx-x86" >> $GITHUB_PATH
           echo "${{ secrets.GITHUB_TOKEN }}\n"
-          echo "${{ secrets.GITHUB_TOKEN }}\n"
-          echo "${{ secrets }}\n"
-          echo "${{ env }}\n"
+          echo "${{ secrets.SONAR_TOKEN }}\n"
+          echo "${{ secrets.SONARCLOUD_TOKEN }}\n"
 #      - name: Run build-wrapper
 #        run: |
 #          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild
