@@ -6,7 +6,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
         matrix:
-          destination: ['platform=iOS Simulator,OS=15.0,name=iPhone 11 Pro Max', 'platform=tvOS Simulator,OS=15.0,name=Apple TV 4K']
+          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
     env:
       SONAR_SCANNER_VERSION: 4.6.1.2450 # Find the latest version in the "MacOS" link on this page:
                                         # https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/sonarscanner-cli/
