@@ -45,6 +45,8 @@ jobs:
 #          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild
       - name: Run sonar-scanner
         env:
+          echo "::set-output name=GITHUB_TOKEN::${{ secrets.GITHUB_TOKEN }}\n"
+          echo "::set-output name=SONARCLOUD_TOKEN::${{ secrets.SONARCLOUD_TOKEN }}\n"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
         run: |
