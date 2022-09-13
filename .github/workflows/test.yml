@@ -54,7 +54,6 @@ jobs:
           sonar-scanner --define sonar.host.url="${{ env.SONAR_SERVER_URL }}" --define sonar.cfamily.build-wrapper-output="${{ env.BUILD_WRAPPER_OUT_DIR }}"
       - name: Build and test
         run: |
-          cd CodeCoverage
           xcodebuild clean test -project CodeCoverage.xcodeproj -scheme CodeCoverage -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
          destination: ${{ matrix.destination }}
