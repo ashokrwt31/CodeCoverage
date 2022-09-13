@@ -1,4 +1,4 @@
-on: pull_request
+on: push
 name: Test
 jobs:
   test:
@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
+      - name: Code Review
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
       - name: Build and test
         run: |
           cd CodeCoverage
