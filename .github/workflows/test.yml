@@ -1,5 +1,9 @@
-on: push
-name: Test
+on:
+  push:
+    paths:
+      - '.github/workflows/codelint.yml'
+      - '.swiftlint.yml'
+      - '**/*.swift'
 
 jobs:
   test:
