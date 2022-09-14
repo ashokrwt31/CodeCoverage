@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@master
       - name: Add SwiftLint
         run:  swiftlint lint --reporter github-actions-logging
+        with:
+          args: --strict
       - name: Setup Java  11
         uses: actions/setup-java@v1
         with:
