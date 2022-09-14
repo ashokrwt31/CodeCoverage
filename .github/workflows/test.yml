@@ -5,14 +5,15 @@ jobs:
   test:
     name: Pipeline Workflow
     runs-on: macOS-latest
-    strategy:
-        matrix:
-          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
+#    strategy:
+#        matrix:
+#          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
     env:
       SONAR_SCANNER_VERSION: 4.6.1.2450 # Find the latest version in the "MacOS" link on this page:
                                         # https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/sonarscanner-cli/
       SONAR_SERVER_URL: "https://sonarcloud.io"
       BUILD_WRAPPER_OUT_DIR: build_wrapper_output_directory # Directory where build-wrapper output will be placed
+      destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -47,10 +48,10 @@ jobs:
 #      - name: Run build-wrapper
 #        run: |
 #          build-wrapper-macosx-x86 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} xcodebuild
-#      - name: Run SwiftLint
-#        run:  |
-#          set -o pipefail
-#          swiftlint lint --strict --quiet | sed -E 's/^(.*):([0-9]+):([0-9]+): (warning|error|[^:]+): (.*)/::\4 title=Lint error,file=\1,line=\2,col=\3::\5\n\1:\2:\3/'
+      - name: Run SwiftLint
+        run:  |
+          set -o pipefail
+          swiftlint lint --strict --quiet | sed -E 's/^(.*):([0-9]+):([0-9]+): (warning|error|[^:]+): (.*)/::\4 title=Lint error,file=\1,line=\2,col=\3::\5\n\1:\2:\3/'
       - name: Run sonar-scanner
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,5 +61,5 @@ jobs:
       - name: Build and test
         run: |
           xcodebuild clean test -project CodeCoverage.xcodeproj -scheme CodeCoverage -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-#        env:
-#         destination: ${{ matrix.destination }}
+        env:
+         destination: ${{ matrix.destination }}
