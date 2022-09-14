@@ -1,10 +1,5 @@
+on: push
 name: Test
-on:
-  pull_request:
-    paths:
-      - '.github/workflows/test.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
 
 jobs:
   test:
@@ -21,8 +16,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Lint code using SwiftLint
+      - name: Add SwiftLint
         run:  swiftlint lint --reporter github-actions-logging
+        with:
+          args: --strict
       - name: Setup Java  11
         uses: actions/setup-java@v1
         with:
