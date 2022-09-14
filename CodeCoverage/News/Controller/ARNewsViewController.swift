@@ -30,8 +30,6 @@ class ARNewsViewController: UIViewController {
             }
         }
     }
-
-
 }
 
 extension ARNewsViewController: UITableViewDataSource {
