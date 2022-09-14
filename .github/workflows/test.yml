@@ -5,9 +5,9 @@ jobs:
   test:
     name: Pipeline Workflow
     runs-on: macOS-latest
-#    strategy:
-#        matrix:
-#          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
     env:
       SONAR_SCANNER_VERSION: 4.6.1.2450 # Find the latest version in the "MacOS" link on this page:
                                         # https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/sonarscanner-cli/
@@ -61,4 +61,4 @@ jobs:
         run: |
           xcodebuild clean test -project CodeCoverage.xcodeproj -scheme CodeCoverage -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
-          destination: ['platform=iOS Simulator,OS=15.2,name=iPhone 11 Pro Max']
+         destination: ${{ matrix.destination }}
