@@ -14,7 +14,7 @@ public enum HTTPMethod: String {
     case DELETE
     case PATCH
     
-    var method: String { rawValue.uppercased() }
+//    var method: String { rawValue.uppercased() }
 }
 
 enum ARNetworkError: Error {
@@ -34,7 +34,7 @@ struct ARNewtworkManager {
     public init?(_ baseURL: String, httpMethod: HTTPMethod = .GET) {
         guard let baseURL = URL(string: baseURL) else { return nil }
         self.baseURL = baseURL
-        self.httpMethod = httpMethod.method
+        self.httpMethod = httpMethod.rawValue.uppercased()
     }
      
     public func createRequest(service: String?, params: [String: Any]?) -> URLRequest? {
