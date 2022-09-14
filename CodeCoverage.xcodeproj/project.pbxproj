@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		D940D65128D0659800312C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65028D0659800312C1C /* AppDelegate.swift */; };
 		D940D65328D0659800312C1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65228D0659800312C1C /* SceneDelegate.swift */; };
-		D940D65528D0659800312C1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65428D0659800312C1C /* ViewController.swift */; };
 		D940D65828D0659800312C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D940D65628D0659800312C1C /* Main.storyboard */; };
 		D940D65A28D0659A00312C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D940D65928D0659A00312C1C /* Assets.xcassets */; };
 		D940D65D28D0659A00312C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D940D65B28D0659A00312C1C /* LaunchScreen.storyboard */; };
 		D940D66828D0659A00312C1C /* CodeCoverageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D66728D0659A00312C1C /* CodeCoverageTests.swift */; };
 		D940D67228D0659A00312C1C /* CodeCoverageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D67128D0659A00312C1C /* CodeCoverageUITests.swift */; };
 		D940D67428D0659A00312C1C /* CodeCoverageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D67328D0659A00312C1C /* CodeCoverageUITestsLaunchTests.swift */; };
+		D940D68328D1A6BB00312C1C /* ARNewtworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D68228D1A6BB00312C1C /* ARNewtworkManager.swift */; };
+		D955FA3B28D1AA2300424E64 /* ARNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA3A28D1AA2300424E64 /* ARNewsViewController.swift */; };
+		D955FA3F28D1AA7500424E64 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA3E28D1AA7500424E64 /* News.swift */; };
+		D955FA4128D1AA7800424E64 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA4028D1AA7800424E64 /* NewsViewModel.swift */; };
+		D955FA4428D1AA7C00424E64 /* ARNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA4228D1AA7C00424E64 /* ARNewsCell.swift */; };
+		D955FA4B28D1AC6A00424E64 /* ARNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D955FA4A28D1AC6A00424E64 /* ARNewsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,6 @@
 		D940D64D28D0659800312C1C /* CodeCoverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeCoverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D940D65028D0659800312C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D940D65228D0659800312C1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D940D65428D0659800312C1C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D940D65728D0659800312C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D940D65928D0659A00312C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D940D65C28D0659A00312C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		D940D66D28D0659A00312C1C /* CodeCoverageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeCoverageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D940D67128D0659A00312C1C /* CodeCoverageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITests.swift; sourceTree = "<group>"; };
 		D940D67328D0659A00312C1C /* CodeCoverageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeCoverageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D940D68228D1A6BB00312C1C /* ARNewtworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNewtworkManager.swift; sourceTree = "<group>"; };
+		D955FA3A28D1AA2300424E64 /* ARNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNewsViewController.swift; sourceTree = "<group>"; };
+		D955FA3E28D1AA7500424E64 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		D955FA4028D1AA7800424E64 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		D955FA4228D1AA7C00424E64 /* ARNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNewsCell.swift; sourceTree = "<group>"; };
+		D955FA4A28D1AC6A00424E64 /* ARNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARNewsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,10 @@
 		D940D64F28D0659800312C1C /* CodeCoverage */ = {
 			isa = PBXGroup;
 			children = (
+				D955FA4528D1AAB500424E64 /* News */,
+				D940D68428D1A6C100312C1C /* NetworkManager */,
 				D940D65028D0659800312C1C /* AppDelegate.swift */,
 				D940D65228D0659800312C1C /* SceneDelegate.swift */,
-				D940D65428D0659800312C1C /* ViewController.swift */,
 				D940D65628D0659800312C1C /* Main.storyboard */,
 				D940D65928D0659A00312C1C /* Assets.xcassets */,
 				D940D65B28D0659A00312C1C /* LaunchScreen.storyboard */,
@@ -125,6 +136,58 @@
 				D940D67328D0659A00312C1C /* CodeCoverageUITestsLaunchTests.swift */,
 			);
 			path = CodeCoverageUITests;
+			sourceTree = "<group>";
+		};
+		D940D68428D1A6C100312C1C /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				D940D68228D1A6BB00312C1C /* ARNewtworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		D955FA4528D1AAB500424E64 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA4928D1AAD400424E64 /* ViewModel */,
+				D955FA4828D1AACF00424E64 /* Controller */,
+				D955FA4728D1AAC900424E64 /* Views */,
+				D955FA4628D1AAC100424E64 /* Model */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		D955FA4628D1AAC100424E64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA3E28D1AA7500424E64 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D955FA4728D1AAC900424E64 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA4A28D1AC6A00424E64 /* ARNewsCell.xib */,
+				D955FA4228D1AA7C00424E64 /* ARNewsCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D955FA4828D1AACF00424E64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA3A28D1AA2300424E64 /* ARNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D955FA4928D1AAD400424E64 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA4028D1AA7800424E64 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +297,7 @@
 				D940D65D28D0659A00312C1C /* LaunchScreen.storyboard in Resources */,
 				D940D65A28D0659A00312C1C /* Assets.xcassets in Resources */,
 				D940D65828D0659800312C1C /* Main.storyboard in Resources */,
+				D955FA4B28D1AC6A00424E64 /* ARNewsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D940D65528D0659800312C1C /* ViewController.swift in Sources */,
+				D955FA3B28D1AA2300424E64 /* ARNewsViewController.swift in Sources */,
+				D955FA4128D1AA7800424E64 /* NewsViewModel.swift in Sources */,
+				D940D68328D1A6BB00312C1C /* ARNewtworkManager.swift in Sources */,
 				D940D65128D0659800312C1C /* AppDelegate.swift in Sources */,
+				D955FA4428D1AA7C00424E64 /* ARNewsCell.swift in Sources */,
+				D955FA3F28D1AA7500424E64 /* News.swift in Sources */,
 				D940D65328D0659800312C1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
