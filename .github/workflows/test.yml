@@ -1,9 +1,6 @@
 on: push
 name: Test
-paths:
-      - '.github/workflows/test.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
+
 jobs:
   test:
     name: Test
