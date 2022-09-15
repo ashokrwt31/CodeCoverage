@@ -22,11 +22,6 @@ enum ARNetworkError: Error {
     case invalidData
 }
 
-struct API {
-    static let baseURL = "https://saurav.tech/NewsAPI/"
-    static let sourceService = "sources.json"
-}
-
 struct ARNewtworkManager {
     private let baseURL: URL
     private let httpMethod: String

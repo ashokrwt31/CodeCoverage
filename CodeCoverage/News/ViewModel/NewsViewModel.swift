@@ -14,7 +14,12 @@ typealias NewsViewModelCompletionClosure = (([NewsVMSource]?, Error?) -> Void)
 struct NewsViewModel {
     
     func callNetworkAPI(completion: NewsCompletionClosure?) {
-        let networkManager = ARNewtworkManager(API.baseURL)
+        guard let url = API.baseURL else {
+            print(API.baseURL)
+            completion?(nil, ARNetworkError.invalidUrl)
+            return
+        }
+        let networkManager = ARNewtworkManager(url)
         guard let request = networkManager?.createRequest(service: API.sourceService, params: nil) else {
                 completion?(nil, ARNetworkError.invalidUrl)
                 return

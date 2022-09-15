@@ -21,6 +21,9 @@
 		D955FA4128D1AA7800424E64 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA4028D1AA7800424E64 /* NewsViewModel.swift */; };
 		D955FA4428D1AA7C00424E64 /* ARNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA4228D1AA7C00424E64 /* ARNewsCell.swift */; };
 		D955FA4B28D1AC6A00424E64 /* ARNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D955FA4A28D1AC6A00424E64 /* ARNewsCell.xib */; };
+		D955FA4D28D3190200424E64 /* ServiceAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = D955FA4C28D3190200424E64 /* ServiceAPI.plist */; };
+		D955FA4F28D319A600424E64 /* ARConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA4E28D319A600424E64 /* ARConfig.swift */; };
+		D955FA5128D32E6B00424E64 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = D955FA5028D32E6B00424E64 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		D955FA4028D1AA7800424E64 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		D955FA4228D1AA7C00424E64 /* ARNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARNewsCell.swift; sourceTree = "<group>"; };
 		D955FA4A28D1AC6A00424E64 /* ARNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARNewsCell.xib; sourceTree = "<group>"; };
+		D955FA4C28D3190200424E64 /* ServiceAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ServiceAPI.plist; sourceTree = "<group>"; };
+		D955FA4E28D319A600424E64 /* ARConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARConfig.swift; sourceTree = "<group>"; };
+		D955FA5028D32E6B00424E64 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,8 @@
 				D940D68428D1A6C100312C1C /* NetworkManager */,
 				D940D65028D0659800312C1C /* AppDelegate.swift */,
 				D940D65228D0659800312C1C /* SceneDelegate.swift */,
+				D955FA4C28D3190200424E64 /* ServiceAPI.plist */,
+				D955FA4E28D319A600424E64 /* ARConfig.swift */,
 				D940D65628D0659800312C1C /* Main.storyboard */,
 				D940D65928D0659A00312C1C /* Assets.xcassets */,
 				D940D65B28D0659A00312C1C /* LaunchScreen.storyboard */,
@@ -142,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D940D68228D1A6BB00312C1C /* ARNewtworkManager.swift */,
+				D955FA5028D32E6B00424E64 /* API.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D940D65D28D0659A00312C1C /* LaunchScreen.storyboard in Resources */,
+				D955FA4D28D3190200424E64 /* ServiceAPI.plist in Resources */,
 				D940D65A28D0659A00312C1C /* Assets.xcassets in Resources */,
 				D940D65828D0659800312C1C /* Main.storyboard in Resources */,
 				D955FA4B28D1AC6A00424E64 /* ARNewsCell.xib in Resources */,
@@ -324,10 +334,12 @@
 			files = (
 				D955FA3B28D1AA2300424E64 /* ARNewsViewController.swift in Sources */,
 				D955FA4128D1AA7800424E64 /* NewsViewModel.swift in Sources */,
+				D955FA4F28D319A600424E64 /* ARConfig.swift in Sources */,
 				D940D68328D1A6BB00312C1C /* ARNewtworkManager.swift in Sources */,
 				D940D65128D0659800312C1C /* AppDelegate.swift in Sources */,
 				D955FA4428D1AA7C00424E64 /* ARNewsCell.swift in Sources */,
 				D955FA3F28D1AA7500424E64 /* News.swift in Sources */,
+				D955FA5128D32E6B00424E64 /* API.swift in Sources */,
 				D940D65328D0659800312C1C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
