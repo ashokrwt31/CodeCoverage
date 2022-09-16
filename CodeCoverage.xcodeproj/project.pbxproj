@@ -115,12 +115,11 @@
 		D940D64F28D0659800312C1C /* CodeCoverage */ = {
 			isa = PBXGroup;
 			children = (
+				D99648FA28D437C300563E49 /* Config */,
 				D955FA4528D1AAB500424E64 /* News */,
 				D940D68428D1A6C100312C1C /* NetworkManager */,
 				D940D65028D0659800312C1C /* AppDelegate.swift */,
 				D940D65228D0659800312C1C /* SceneDelegate.swift */,
-				D955FA4C28D3190200424E64 /* ServiceAPI.plist */,
-				D955FA4E28D319A600424E64 /* ARConfig.swift */,
 				D940D65628D0659800312C1C /* Main.storyboard */,
 				D940D65928D0659A00312C1C /* Assets.xcassets */,
 				D940D65B28D0659A00312C1C /* LaunchScreen.storyboard */,
@@ -197,6 +196,23 @@
 				D955FA4028D1AA7800424E64 /* NewsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D99648F928D4379700563E49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA4C28D3190200424E64 /* ServiceAPI.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D99648FA28D437C300563E49 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D955FA4E28D319A600424E64 /* ARConfig.swift */,
+				D99648F928D4379700563E49 /* Resources */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
