@@ -54,8 +54,6 @@ class ARNewsCell: UITableViewCell {
     
     @IBAction private func tapLabel(gesture: UITapGestureRecognizer) {
         let text = (self.urlLabel.text)!
-        if let url = URL(string: text) {
-            UIApplication.shared.open(url)
-        }
+        UIApplication.shared.open(URL(string: text)!)
     }
 }
