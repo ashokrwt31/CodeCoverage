@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093444862C5280250015F089 /* sonarqubetest.html in Resources */ = {isa = PBXBuildFile; fileRef = 093444852C5280250015F089 /* sonarqubetest.html */; };
 		D940D65128D0659800312C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65028D0659800312C1C /* AppDelegate.swift */; };
 		D940D65328D0659800312C1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65228D0659800312C1C /* SceneDelegate.swift */; };
 		D940D65528D0659800312C1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D940D65428D0659800312C1C /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093444852C5280250015F089 /* sonarqubetest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sonarqubetest.html; sourceTree = "<group>"; };
 		D940D64D28D0659800312C1C /* CodeCoverage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeCoverage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D940D65028D0659800312C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D940D65228D0659800312C1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		D940D64F28D0659800312C1C /* CodeCoverage */ = {
 			isa = PBXGroup;
 			children = (
+				093444852C5280250015F089 /* sonarqubetest.html */,
 				D940D65028D0659800312C1C /* AppDelegate.swift */,
 				D940D65228D0659800312C1C /* SceneDelegate.swift */,
 				D940D65428D0659800312C1C /* ViewController.swift */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D940D65D28D0659A00312C1C /* LaunchScreen.storyboard in Resources */,
+				093444862C5280250015F089 /* sonarqubetest.html in Resources */,
 				D940D65A28D0659A00312C1C /* Assets.xcassets in Resources */,
 				D940D65828D0659800312C1C /* Main.storyboard in Resources */,
 			);
